@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import BasicProduct from "./components/BasicProduct";
 
 function App() {
+
+  const products = [
+    {title: "milk", price: "10", imageUrl: "../public/images/milk.jpeg"}
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div> 
+      <h2> products </h2>
+      <BasicProduct
+        title={products[0].title}
+        price={products[0].price}
+        imageUrl={products[0].imageUrl} />
     </div>
   );
 }
