@@ -8,10 +8,12 @@ function App() {
   return (
     <div> 
       <h2> products </h2>
-      <BasicProduct
-        title={products[0].title}
-        price={products[0].price}
-        imageUrl={products[0].imageUrl} />
+      {products.map(product =>{
+        return (<BasicProduct
+          title={product.title}
+          price={product.price}
+          imageUrl={product.imageUrl} />)
+      })}
     </div>
   );
 }
