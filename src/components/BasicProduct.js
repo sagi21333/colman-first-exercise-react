@@ -4,7 +4,7 @@ import './BasicProduct.css';
 const BasicProduct = (props) => {
 
     return(
-        <div className={basic-product}>
+        <div >
             <h2 >{props.title} </h2>
             <div >{props.price} </div>
             <img src={props.imageUrl}  />
