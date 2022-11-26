@@ -1,13 +1,20 @@
 import * as React from 'react';
 import './BasicProduct.css';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faDollarSign} from '@fortawesome/free-solid-svg-icons'
 
 const BasicProduct = (props) => {
 
     return(
         <div className="basic-product">
-            <h2 className="basic-product__title">{props.title} </h2>
-            <div className="basic-product__price">{props.price} </div>
-            <img src={props.imageUrl}  />
+            <div className="item_details">
+                <div className="item_title">{props.title}</div>
+                <div className="item_price">
+                    <FontAwesomeIcon icon={faDollarSign}></FontAwesomeIcon>
+                    {props.price}
+                </div>
+            </div>
+            <img src={props.imageUrl} />
         </div>
     );
 

@@ -1,3 +1,8 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
 .basic-product {
     display: flex;
     justify-content: space-between;
@@ -7,20 +12,25 @@
     margin: 1rem 0;
     border-radius: 12px;
     background-color: #9fd2bf;
+    width: 500px;
 }
-
-.basic-product__price {
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    background-color: #99a5a4;
-    border: 1px solid white;
-    padding: 1rem;
-    border-radius: 12px;
+.item_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80px;
 }
-
-.basic-product__title {
+.basic-product img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+.item_price {
+    color: red;
+    display: flex;
+    align-items: center;
+}
+.item_title {
     color: white;
     font-size: 2rem;
-    padding: 1rem;
 }
