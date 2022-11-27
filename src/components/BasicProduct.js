@@ -3,7 +3,7 @@ import './BasicProduct.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faDollarSign} from '@fortawesome/free-solid-svg-icons'
 
-const BasicProduct = (props) => {
+function BasicProduct (props) {
 
     return(
         <div className="basic-product">
